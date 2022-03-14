@@ -59,7 +59,7 @@ nav {
 }
 
 main {
-  width: 75%;
+  width: 100%;
   background-color: black;
   color: floralwhite;
   padding: 20px;
@@ -228,7 +228,7 @@ form input, form textarea {
     display: none;
   } */
   main {
-    width: 70%;
+    width: 75%;
     float: right;
   }
 }
