@@ -145,7 +145,8 @@ section h2 {
 /* PORTFOLIO SECTION */
 
 main .portfolio .siteImage {
-  width: 80%;
+  display: flex;
+  width: 100%;
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,13 +178,26 @@ main .portfolio .siteImage a {
 
 .portfolio .marisDitals {
   background-image: url("../img/marisDigitals.JPG");
-
 }
 
 .portfolio .huddle {
   background-image: url("../img/huddle-landing-page.JPG");
+}
+
+.portfolio .todoapp {
+  background-image: url("../img/todoApp.png");
+}
+
+.portfolio .pixelArt {
+  background-image: url("../img/pixelArt_maker.JPG");
 
 }
+
+.portfolio .shorten {
+  background-image: url("../img/shorten.JPG");
+
+}
+
 
 form input, form textarea {
   width: 100%;
@@ -196,10 +210,18 @@ form input, form textarea {
 
 @media screen and (min-width: 601px)  {
 
+  main .portfolio .cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .siteImage {
+    width: 600px;
+  }
+
   .portfolio .cards, .contacts {
     display: flex;
     justify-content: space-between;
-
   }
 
   .contactMe form, .contacts .address {
