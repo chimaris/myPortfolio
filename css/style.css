@@ -3,20 +3,6 @@
 	box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -45,36 +31,17 @@ span {
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* .wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-} */
+
 nav {
-	width: 25%;
 	height: 700px;
 	background-color: rgb(27, 26, 26);
-	position: fixed;
 }
 
 main {
-	width: 100%;
 	background-color: black;
 	color: floralwhite;
 	padding: 20px;
 }
-
-/* .header h1 {
-  position: relative;
-  animation-name: main;
-  animation-duration: 5s;  
-  animation-fill-mode: backwards;
-}
-
-@keyframes main {
-  from {right: 0px;}
-  to {left: 200px;}
-} */
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -89,18 +56,18 @@ a {
 	color: white;
 }
 
+.social-icons i:hover {
+	color: #ff8c00;
+}
+
 nav ul {
 	list-style: none;
 }
 
-nav img,
-.hiddenImage {
+nav img {
 	border-radius: 50%;
 	border: 5px solid #ff8c00;
 	margin: 20px 70px;
-}
-.hiddenImage {
-	display: none;
 }
 
 nav ul.navBar li a {
@@ -158,7 +125,7 @@ main .portfolio .siteImage {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 20px;
-	margin: 10px;
+	/* margin: 10px; */
 }
 
 main .portfolio .siteImage:hover {
@@ -211,13 +178,8 @@ form textarea {
 }
 
 @media screen and (min-width: 601px) {
-	/* main .portfolio .cards {
-    display: flex;
-    flex-direction: row;
-  } */
-
 	.siteImage {
-		width: 600px;
+		width: 500px;
 	}
 
 	.cards {
@@ -242,23 +204,33 @@ form textarea {
 
 @media screen and (max-width: 1100px) {
 	nav {
-		display: none;
-	}
-	main {
-		width: 100%;
+		height: 600px;
+		text-align: center;
+		z-index: 5;
 	}
 
-	.hiddenImage {
-		display: block;
+	header {
+		text-align: center;
 	}
 }
 
 @media screen and (min-width: 1150px) {
-	/* nav {
-    display: none;
-  } */
-	main {
-		width: 75%;
-		float: right;
+	.wrapper {
+		display: grid;
+		grid-template-columns: 25% 75%;
 	}
+
+	nav {
+		position: sticky;
+		top: 0;
+	}
+}
+
+footer {
+	text-align: right;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	border-top: 2px solid white;
+	padding: 10px;
 }
