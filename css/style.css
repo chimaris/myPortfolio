@@ -98,6 +98,10 @@ header i {
 	text-align: center;
 }
 
+header i:hover {
+	color: #ff8c00;
+}
+
 table {
 	border-spacing: 10px 0;
 	line-height: 1.5;
