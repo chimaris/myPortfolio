@@ -1,47 +1,46 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
 	clear: both;
 }
 
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
 html {
-  scroll-behavior: smooth;
-
+	scroll-behavior: smooth;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: black;
-  color: white;
-  line-height: 2;
-  scrollbar-color: #FF8C00;
+	font-family: "Open Sans", sans-serif;
+	background-color: black;
+	color: white;
+	line-height: 2;
+	scrollbar-color: #ff8c00;
 }
 
-h1, h3, h2 {
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 5px;
+h1,
+h3,
+h2 {
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 5px;
 }
 
 span {
-  color: #FF8C00;
+	color: #ff8c00;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -52,18 +51,17 @@ span {
   flex-direction: column;
 } */
 nav {
-  width: 25%;
-  height: 700px;
-  background-color: rgb(27, 26, 26);
-  position: fixed
+	width: 25%;
+	height: 700px;
+	background-color: rgb(27, 26, 26);
+	position: fixed;
 }
 
 main {
-  width: 100%;
-  background-color: black;
-  color: floralwhite;
-  padding: 20px;
-  
+	width: 100%;
+	background-color: black;
+	color: floralwhite;
+	padding: 20px;
 }
 
 /* .header h1 {
@@ -83,174 +81,184 @@ main {
 /*******************************************/
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .social-icons i {
-  color: white;
+	color: white;
 }
 
 nav ul {
-  list-style: none;
+	list-style: none;
 }
 
-nav img, .hiddenImage {
-  border-radius: 50%;
-  border: 5px solid #FF8C00;
-  margin: 20px 70px;
+nav img,
+.hiddenImage {
+	border-radius: 50%;
+	border: 5px solid #ff8c00;
+	margin: 20px 70px;
 }
 .hiddenImage {
-  display: none;
+	display: none;
 }
 
 nav ul.navBar li a {
-  display: block;
-  width: 250px;
-  padding: 10px;
-  margin: 20px auto;
-  background-color: darkgray;
-  text-align: center;
+	display: block;
+	width: 250px;
+	padding: 10px;
+	margin: 20px auto;
+	background-color: darkgray;
+	text-align: center;
+	transition: all 200ms ease;
+	font-weight: bold;
+}
+
+nav ul.navBar li a:hover {
+	background-color: black;
+	color: #ff8c00;
+	cursor: pointer;
 }
 
 ul.social-icons {
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px auto;
-
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
 }
 
 header i {
-  text-align: center;
+	text-align: center;
 }
 
 table {
-  border-spacing: 10px 0;
-  line-height: 1.5;
+	border-spacing: 10px 0;
+	line-height: 1.5;
 }
 td {
-  padding: 10px 10px 10px 0;
+	padding: 10px 10px 10px 0;
 }
 
 section {
-  margin: 30px 0;
+	margin: 30px 0;
 }
 
 section h2 {
-  border-left: 5px solid #FF8C00;
-  padding: 15px;
+	border-left: 5px solid #ff8c00;
+	padding: 15px;
 }
 
 /* PORTFOLIO SECTION */
 
 main .portfolio .siteImage {
-  display: flex;
-  width: 100%;
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 20px;
-  margin: 10px;
+	display: flex;
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	margin: 10px;
 }
 
 main .portfolio .siteImage:hover {
- opacity: 0.6;
+	opacity: 0.6;
 }
 
 main .portfolio .siteImage a {
-  display: block;
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  color: white;
-  position: relative;
-  top: 250px;
-  text-align: center;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	position: relative;
+	top: 250px;
+	text-align: center;
 }
-
 
 .portfolio .resturant {
-  background-image: url("../img/resturant.JPG");
-
+	background-image: url("../img/resturant.JPG");
 }
 
-.portfolio .marisDitals {
-  background-image: url("../img/marisDigitals.JPG");
+.portfolio .social-proof {
+	background-image: url("../img/socialProof.JPG");
 }
 
 .portfolio .huddle {
-  background-image: url("../img/huddle-landing-page.JPG");
+	background-image: url("../img/huddle-landing-page.JPG");
 }
 
 .portfolio .todoapp {
-  background-image: url("../img/todoApp.png");
+	background-image: url("../img/todoApp.png");
 }
 
 .portfolio .pixelArt {
-  background-image: url("../img/pixelArt_maker.JPG");
-
+	background-image: url("../img/pixelArt_maker.JPG");
 }
 
 .portfolio .shorten {
-  background-image: url("../img/shorten.JPG");
-
+	background-image: url("../img/shorten.JPG");
 }
 
-
-form input, form textarea {
-  width: 100%;
-  display: block;
-  padding: 15px 20px;
-  margin: 20px 0;
-  background-color: black;
-  color: white;
+form input,
+form textarea {
+	width: 100%;
+	display: block;
+	padding: 15px 20px;
+	margin: 20px 0;
+	background-color: black;
+	color: white;
 }
 
-@media screen and (min-width: 601px)  {
-
-  main .portfolio .cards {
+@media screen and (min-width: 601px) {
+	/* main .portfolio .cards {
     display: flex;
     flex-direction: row;
-  }
+  } */
 
-  .siteImage {
-    width: 600px;
-  }
+	.siteImage {
+		width: 600px;
+	}
 
-  .portfolio .cards, .contacts {
-    display: flex;
-    justify-content: space-between;
-  }
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 5px;
+	}
 
-  .contactMe form, .contacts .address {
-    width: 50%;
-  }
-  .contactMe form {
-    margin-right: 10px;
-  }
+	.contacts {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contactMe form,
+	.contacts .address {
+		width: 50%;
+	}
+	.contactMe form {
+		margin-right: 10px;
+	}
 }
 
-@media screen and (max-width : 1100px) {
-   nav {
-     display: none;
-   }
-   main {
-     width: 100%;
-   }
+@media screen and (max-width: 1100px) {
+	nav {
+		display: none;
+	}
+	main {
+		width: 100%;
+	}
 
-   .hiddenImage {
-    display: block;
-  }
+	.hiddenImage {
+		display: block;
+	}
 }
 
-@media screen and (min-width : 1150px) {
-  /* nav {
+@media screen and (min-width: 1150px) {
+	/* nav {
     display: none;
   } */
-  main {
-    width: 75%;
-    float: right;
-  }
+	main {
+		width: 75%;
+		float: right;
+	}
 }
