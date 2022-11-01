@@ -121,54 +121,60 @@ section h2 {
 
 /* PORTFOLIO SECTION */
 
-main .portfolio .siteImage {
+.portfolio .cards {
 	display: flex;
 	width: 100%;
-	height: 300px;
+	justify-content: space-between;
+}
+
+.siteImage {
+	width: 70%;
+	margin-right: 10px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 20px;
-	/* margin: 10px; */
 }
 
 main .portfolio .siteImage:hover {
 	opacity: 0.6;
 }
 
-main .portfolio .siteImage a {
-	display: block;
-	width: 100%;
-	height: 50px;
-	background-color: black;
-	color: white;
-	position: relative;
-	top: 250px;
+.siteImage .content {
+	background-color: white;
+	color: #ff8c00;
+	width: 80%;
 	text-align: center;
+	margin: 150px auto 0;
+	border: 3px solid #ff8c00;
 }
 
-.portfolio .resturant {
-	background-image: url("../img/resturant.JPG");
+.siteImage .content h3 {
+	margin: unset;
 }
 
-.portfolio .social-proof {
-	background-image: url("../img/socialProof.JPG");
+.cards .ecommerce {
+	background-image: url("../img/mini-ecommerce.JPG");
 }
 
-.portfolio .huddle {
-	background-image: url("../img/huddle-landing-page.JPG");
+.cards .instagram {
+	background-image: url("../img/instagram-clone.JPG");
 }
 
-.portfolio .todoapp {
+.cards .todoapp {
 	background-image: url("../img/todoApp.png");
 }
 
-.portfolio .pixelArt {
+.cards .pixelArt {
 	background-image: url("../img/pixelArt_maker.JPG");
 }
 
-.portfolio .shorten {
-	background-image: url("../img/shorten.JPG");
+.cards .weather {
+	background-image: url("../img/weatherApp.JPG");
+}
+
+.cards .dictionary {
+	background-image: url("../img/dictionary.JPG");
 }
 
 form input,
