@@ -52,6 +52,13 @@ a {
 	color: black;
 }
 
+img {
+	/* width: 60%;
+	height: 30%; */
+	max-width: 60%;
+	max-height: 30%;
+}
+
 .social-icons i {
 	color: white;
 }
@@ -124,16 +131,18 @@ section h2 {
 .portfolio .cards {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	flex-direction: column;
+	/* justify-content: space-between; */
 }
 
 .siteImage {
-	width: 70%;
+	width: 85%;
 	margin-right: 10px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 20px;
+	margin: 10px auto;
 }
 
 main .portfolio .siteImage:hover {
@@ -188,14 +197,12 @@ form textarea {
 }
 
 @media screen and (min-width: 601px) {
-	.siteImage {
-		width: 500px;
+	.portfolio .cards {
+		flex-direction: row;
+		justify-content: space-between;
 	}
-
-	.cards {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 5px;
+	.siteImage {
+		width: 30%;
 	}
 
 	.contacts {
