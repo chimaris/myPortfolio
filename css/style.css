@@ -163,28 +163,28 @@ main .portfolio .siteImage:hover {
 	margin: unset;
 }
 
-.cards .ecommerce {
-	background-image: url("../img/mini-ecommerce.JPG");
+.cards .loopstudio {
+	background-image: url("../img/loopstudio.PNG");
 }
 
-.cards .instagram {
-	background-image: url("../img/instagram-clone.JPG");
+.cards .huddle {
+	background-image: url("../img/huddle-landing-page.jpg");
 }
 
 .cards .todoapp {
 	background-image: url("../img/todoApp.png");
 }
 
-.cards .pixelArt {
-	background-image: url("../img/pixelArt_maker.JPG");
+.cards .restaurant {
+	background-image: url("../img/resturant.jpg");
 }
 
-.cards .weather {
-	background-image: url("../img/weatherApp.JPG");
+.cards .shorten {
+	background-image: url("../img/shorten.jpg");
 }
 
-.cards .dictionary {
-	background-image: url("../img/dictionary.JPG");
+.cards .socialProof {
+	background-image: url("../img/socialProof.jpg");
 }
 
 form input,
